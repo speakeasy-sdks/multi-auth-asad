@@ -36,8 +36,6 @@ composer update
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```php
 <?php
 
@@ -54,7 +52,7 @@ $sdk = MultipleAuthTester::builder()
 
 try {
     $request = new GetCarsByCNICRequest();
-    $request->cnic = 'corrupti';
+    $request->cnic = 'provident';
 
     $response = $sdk->cars->getCarsByCNIC($request);
 
@@ -71,12 +69,24 @@ try {
 ## Available Resources and Operations
 
 
-### [cars](docs/sdks/cars/README.md)
+### [Cars](docs/sdks/cars/README.md)
 
 * [getCarsByCNIC](docs/sdks/cars/README.md#getcarsbycnic) - Find cars by CNIC
 * [getCarsById](docs/sdks/cars/README.md#getcarsbyid) - Find cars by ID
 * [getCarsByName](docs/sdks/cars/README.md#getcarsbyname) - Find cars by Name
 <!-- End SDK Available Operations -->
+
+
+
+<!-- Start Dev Containers -->
+
+
+
+<!-- End Dev Containers -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->
+
+
 
 ### Maturity
 
