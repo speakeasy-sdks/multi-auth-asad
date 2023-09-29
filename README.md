@@ -52,7 +52,7 @@ $sdk = MultipleAuthTester::builder()
 
 try {
     $request = new GetCarsByCNICRequest();
-    $request->cnic = 'provident';
+    $request->cnic = 'Hill Jersey';
 
     $response = $sdk->cars->getCarsByCNIC($request);
 
@@ -69,7 +69,7 @@ try {
 ## Available Resources and Operations
 
 
-### [Cars](docs/sdks/cars/README.md)
+### [cars](docs/sdks/cars/README.md)
 
 * [getCarsByCNIC](docs/sdks/cars/README.md#getcarsbycnic) - Find cars by CNIC
 * [getCarsById](docs/sdks/cars/README.md#getcarsbyid) - Find cars by ID

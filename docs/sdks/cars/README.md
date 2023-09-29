@@ -1,4 +1,5 @@
 # Cars
+(*cars*)
 
 ## Overview
 
@@ -32,7 +33,7 @@ $sdk = MultipleAuthTester::builder()
 
 try {
     $request = new GetCarsByCNICRequest();
-    $request->cnic = 'distinctio';
+    $request->cnic = 'Hill Jersey';
 
     $response = $sdk->cars->getCarsByCNIC($request);
 
@@ -79,7 +80,7 @@ $sdk = MultipleAuthTester::builder()
 
 try {
     $request = new GetCarsByIdRequest();
-    $request->id = 844266;
+    $request->id = 174472;
 
     $requestSecurity = new GetCarsByIdSecurity();
     $requestSecurity->apiKey = '';
@@ -130,7 +131,7 @@ $sdk = MultipleAuthTester::builder()
 
 try {
     $request = new GetCarsByNameRequest();
-    $request->name = 'Ismael Little';
+    $request->name = 'modular Electric';
 
     $requestSecurity = new GetCarsByNameSecurity();
     $requestSecurity->apiKeyHeader = '';

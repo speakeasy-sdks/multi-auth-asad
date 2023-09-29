@@ -17,7 +17,7 @@ $sdk = MultipleAuthTester::builder()
 
 try {
     $request = new GetCarsByCNICRequest();
-    $request->cnic = 'corrupti';
+    $request->cnic = 'Hill Jersey';
 
     $response = $sdk->cars->getCarsByCNIC($request);
 
