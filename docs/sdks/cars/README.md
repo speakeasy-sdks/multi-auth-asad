@@ -28,7 +28,13 @@ use \MultiAuthTester\MultipleAuthTester\Models\Shared\Security;
 use \MultiAuthTester\MultipleAuthTester\Models\Shared\SchemeHTTPBasic;
 use \MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByCNICRequest;
 
+$security = new Security();
+$security->apiKey = '';
+$security->httpBasic->password = '';
+$security->httpBasic->username = '';
+
 $sdk = MultipleAuthTester::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
