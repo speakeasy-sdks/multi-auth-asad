@@ -39,7 +39,7 @@ $sdk = MultipleAuthTester::builder()
 
 try {
     $request = new GetCarsByCNICRequest();
-    $request->cnic = 'Hill Jersey';
+    $request->cnic = 'string';
 
     $response = $sdk->cars->getCarsByCNIC($request);
 
@@ -137,7 +137,7 @@ $sdk = MultipleAuthTester::builder()
 
 try {
     $request = new GetCarsByNameRequest();
-    $request->name = 'modular Electric';
+    $request->name = 'string';
 
     $requestSecurity = new GetCarsByNameSecurity();
     $requestSecurity->apiKeyHeader = '';

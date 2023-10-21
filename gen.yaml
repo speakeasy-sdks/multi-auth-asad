@@ -2,24 +2,27 @@ configVersion: 1.0.0
 management:
   docChecksum: 80f3394dfe48f9663121e6a03f027f48
   docVersion: 1.0.1
-  speakeasyVersion: 1.97.1
-  generationVersion: 2.152.1
+  speakeasyVersion: 1.104.0
+  generationVersion: 2.169.0
 generation:
   comments:
     disableComments: false
     omitDescriptionIfSummaryPresent: false
   baseServerURL: ""
+  repoURL: https://github.com/speakeasy-sdks/multi-auth-asad.git
   sdkClassName: MultipleAuthTester
   singleTagPerOp: false
   tagNamespacingDisabled: false
 features:
   php:
-    core: 2.88.2
+    core: 2.89.0
     globalSecurity: 2.81.1
     globalServerURLs: 2.82.0
     methodSecurity: 2.82.0
 php:
-  version: 0.5.0
+  version: 0.6.0
+  installationURL: https://github.com/speakeasy-sdks/multi-auth-asad
   maxMethodParams: 0
   namespace: MultiAuthTester\MultipleAuthTester
   packageName: multiauthtester/multipleauthtester
+  repoSubDirectory: .

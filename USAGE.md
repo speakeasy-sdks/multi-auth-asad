@@ -23,7 +23,7 @@ $sdk = MultipleAuthTester::builder()
 
 try {
     $request = new GetCarsByCNICRequest();
-    $request->cnic = 'Hill Jersey';
+    $request->cnic = 'string';
 
     $response = $sdk->cars->getCarsByCNIC($request);
 
