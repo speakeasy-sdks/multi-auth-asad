@@ -1,5 +1,5 @@
 # Cars
-(*cars*)
+
 
 ## Overview
 
@@ -23,27 +23,26 @@ Returns cars based on CNIC with apiKey and  httpBasic security
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \MultiAuthTester\MultipleAuthTester\MultipleAuthTester;
-use \MultiAuthTester\MultipleAuthTester\Models\Shared\Security;
-use \MultiAuthTester\MultipleAuthTester\Models\Shared\SchemeHTTPBasic;
-use \MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByCNICRequest;
+use \MultiAuthTester\MultipleAuthTester;
+use \MultiAuthTester\MultipleAuthTester\Models\Shared;
+use \MultiAuthTester\MultipleAuthTester\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 $security->httpBasic->password = '';
 $security->httpBasic->username = '';
 
-$sdk = MultipleAuthTester::builder()
+$sdk = MultipleAuthTester\MultipleAuthTester::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCarsByCNICRequest();
+    $request = new Operations\GetCarsByCNICRequest();
     $request->cnic = 'string';
 
     $response = $sdk->cars->getCarsByCNIC($request);
 
-    if ($response->cars !== null) {
+    if ($response->classes !== null) {
         // handle response
     }
 } catch (Exception $e) {
@@ -75,25 +74,23 @@ Returns cars based on ID with apiKey or httpBasic security
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \MultiAuthTester\MultipleAuthTester\MultipleAuthTester;
-use \MultiAuthTester\MultipleAuthTester\Models\Shared\Security;
-use \MultiAuthTester\MultipleAuthTester\Models\Shared\SchemeHTTPBasic;
-use \MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByIdRequest;
-use \MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByIdSecurity;
+use \MultiAuthTester\MultipleAuthTester;
+use \MultiAuthTester\MultipleAuthTester\Models\Shared;
+use \MultiAuthTester\MultipleAuthTester\Models\Operations;
 
-$sdk = MultipleAuthTester::builder()
+$sdk = MultipleAuthTester\MultipleAuthTester::builder()
     ->build();
 
 try {
-    $request = new GetCarsByIdRequest();
+    $request = new Operations\GetCarsByIdRequest();
     $request->id = 174472;
 
-    $requestSecurity = new GetCarsByIdSecurity();
+    $requestSecurity = new Operations\GetCarsByIdSecurity();
     $requestSecurity->apiKey = '';
 
     $response = $sdk->cars->getCarsById($request, $requestSecurity);
 
-    if ($response->cars !== null) {
+    if ($response->classes !== null) {
         // handle response
     }
 } catch (Exception $e) {
@@ -126,27 +123,25 @@ Returns cars based on NAME with apiKeyHeader and httpBasic security
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \MultiAuthTester\MultipleAuthTester\MultipleAuthTester;
-use \MultiAuthTester\MultipleAuthTester\Models\Shared\Security;
-use \MultiAuthTester\MultipleAuthTester\Models\Shared\SchemeHTTPBasic;
-use \MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByNameRequest;
-use \MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByNameSecurity;
+use \MultiAuthTester\MultipleAuthTester;
+use \MultiAuthTester\MultipleAuthTester\Models\Shared;
+use \MultiAuthTester\MultipleAuthTester\Models\Operations;
 
-$sdk = MultipleAuthTester::builder()
+$sdk = MultipleAuthTester\MultipleAuthTester::builder()
     ->build();
 
 try {
-    $request = new GetCarsByNameRequest();
+    $request = new Operations\GetCarsByNameRequest();
     $request->name = 'string';
 
-    $requestSecurity = new GetCarsByNameSecurity();
+    $requestSecurity = new Operations\GetCarsByNameSecurity();
     $requestSecurity->apiKeyHeader = '';
     $requestSecurity->httpBasic->password = '';
     $requestSecurity->httpBasic->username = '';
 
     $response = $sdk->cars->getCarsByName($request, $requestSecurity);
 
-    if ($response->cars !== null) {
+    if ($response->classes !== null) {
         // handle response
     }
 } catch (Exception $e) {

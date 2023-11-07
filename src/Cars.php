@@ -44,15 +44,17 @@ class Cars
         
         $contentType = $httpResponse->getHeader('Content-Type')[0] ?? '';
 
+        $statusCode = $httpResponse->getStatusCode();
+
         $response = new \MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByCNICResponse();
-        $response->statusCode = $httpResponse->getStatusCode();
+        $response->statusCode = $statusCode;
         $response->contentType = $contentType;
         $response->rawResponse = $httpResponse;
         
         if ($httpResponse->getStatusCode() === 200) {
             if (Utils\Utils::matchContentType($contentType, 'application/json')) {
                 $serializer = Utils\JSON::createSerializer();
-                $response->cars = $serializer->deserialize((string)$httpResponse->getBody(), 'array<MultiAuthTester\MultipleAuthTester\Models\Shared\Car>', 'json');
+                $response->classes = $serializer->deserialize((string)$httpResponse->getBody(), 'array<MultiAuthTester\MultipleAuthTester\Models\Shared\Car>', 'json');
             }
         }
         else {
@@ -91,15 +93,17 @@ class Cars
         
         $contentType = $httpResponse->getHeader('Content-Type')[0] ?? '';
 
+        $statusCode = $httpResponse->getStatusCode();
+
         $response = new \MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByIdResponse();
-        $response->statusCode = $httpResponse->getStatusCode();
+        $response->statusCode = $statusCode;
         $response->contentType = $contentType;
         $response->rawResponse = $httpResponse;
         
         if ($httpResponse->getStatusCode() === 200) {
             if (Utils\Utils::matchContentType($contentType, 'application/json')) {
                 $serializer = Utils\JSON::createSerializer();
-                $response->cars = $serializer->deserialize((string)$httpResponse->getBody(), 'array<MultiAuthTester\MultipleAuthTester\Models\Shared\Car>', 'json');
+                $response->classes = $serializer->deserialize((string)$httpResponse->getBody(), 'array<MultiAuthTester\MultipleAuthTester\Models\Shared\Car>', 'json');
             }
         }
         else {
@@ -138,15 +142,17 @@ class Cars
         
         $contentType = $httpResponse->getHeader('Content-Type')[0] ?? '';
 
+        $statusCode = $httpResponse->getStatusCode();
+
         $response = new \MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByNameResponse();
-        $response->statusCode = $httpResponse->getStatusCode();
+        $response->statusCode = $statusCode;
         $response->contentType = $contentType;
         $response->rawResponse = $httpResponse;
         
         if ($httpResponse->getStatusCode() === 200) {
             if (Utils\Utils::matchContentType($contentType, 'application/json')) {
                 $serializer = Utils\JSON::createSerializer();
-                $response->cars = $serializer->deserialize((string)$httpResponse->getBody(), 'array<MultiAuthTester\MultipleAuthTester\Models\Shared\Car>', 'json');
+                $response->classes = $serializer->deserialize((string)$httpResponse->getBody(), 'array<MultiAuthTester\MultipleAuthTester\Models\Shared\Car>', 'json');
             }
         }
         else {

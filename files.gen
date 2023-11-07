@@ -28,8 +28,8 @@ src/Models/Operations/GetCarsByIdResponse.php
 src/Models/Operations/GetCarsByNameSecurity.php
 src/Models/Operations/GetCarsByNameRequest.php
 src/Models/Operations/GetCarsByNameResponse.php
-src/Models/Shared/ErrorModel.php
 src/Models/Shared/Car.php
+src/Models/Shared/ErrorModel.php
 src/Models/Shared/SchemeHTTPBasic.php
 src/Models/Shared/Security.php
 USAGE.md
@@ -41,8 +41,8 @@ docs/models/operations/GetCarsByIdResponse.md
 docs/models/operations/GetCarsByNameSecurity.md
 docs/models/operations/GetCarsByNameRequest.md
 docs/models/operations/GetCarsByNameResponse.md
-docs/models/shared/ErrorModel.md
 docs/models/shared/Car.md
+docs/models/shared/ErrorModel.md
 docs/models/shared/SchemeHTTPBasic.md
 docs/models/shared/Security.md
 docs/sdks/multipleauthtester/README.md

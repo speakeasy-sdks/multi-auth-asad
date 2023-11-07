@@ -12,14 +12,6 @@ namespace MultiAuthTester\MultipleAuthTester\Models\Operations;
 class GetCarsByNameResponse
 {
     /**
-     * car response
-     * 
-     * @var ?array<\MultiAuthTester\MultipleAuthTester\Models\Shared\Car> $cars
-     */
-	
-    public ?array $cars = null;
-    
-    /**
      * HTTP response content type for this operation
      * 
      * @var string $contentType
@@ -51,12 +43,20 @@ class GetCarsByNameResponse
 	
     public ?\Psr\Http\Message\ResponseInterface $rawResponse = null;
     
+    /**
+     * car response
+     * 
+     * @var ?array<\MultiAuthTester\MultipleAuthTester\Models\Shared\Car> $classes
+     */
+	
+    public ?array $classes = null;
+    
 	public function __construct()
 	{
-		$this->cars = null;
 		$this->contentType = "";
 		$this->errorModel = null;
 		$this->statusCode = 0;
 		$this->rawResponse = null;
+		$this->classes = null;
 	}
 }
