@@ -54,12 +54,12 @@ try {
 
 | Parameter                                                                                                                     | Type                                                                                                                          | Required                                                                                                                      | Description                                                                                                                   |
 | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                    | [\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByCNICRequest](../../models/operations/GetCarsByCNICRequest.md) | :heavy_check_mark:                                                                                                            | The request object to use for the request.                                                                                    |
+| `$request`                                                                                                                    | [\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByCNICRequest](../../Models/Operations/GetCarsByCNICRequest.md) | :heavy_check_mark:                                                                                                            | The request object to use for the request.                                                                                    |
 
 
 ### Response
 
-**[?\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByCNICResponse](../../models/operations/GetCarsByCNICResponse.md)**
+**[?\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByCNICResponse](../../Models/Operations/GetCarsByCNICResponse.md)**
 
 
 ## getCarsById
@@ -102,13 +102,13 @@ try {
 
 | Parameter                                                                                                                   | Type                                                                                                                        | Required                                                                                                                    | Description                                                                                                                 |
 | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                  | [\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByIdRequest](../../models/operations/GetCarsByIdRequest.md)   | :heavy_check_mark:                                                                                                          | The request object to use for the request.                                                                                  |
-| `security`                                                                                                                  | [\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByIdSecurity](../../models/operations/GetCarsByIdSecurity.md) | :heavy_check_mark:                                                                                                          | The security requirements to use for the request.                                                                           |
+| `$request`                                                                                                                  | [\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByIdRequest](../../Models/Operations/GetCarsByIdRequest.md)   | :heavy_check_mark:                                                                                                          | The request object to use for the request.                                                                                  |
+| `security`                                                                                                                  | [\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByIdSecurity](../../Models/Operations/GetCarsByIdSecurity.md) | :heavy_check_mark:                                                                                                          | The security requirements to use for the request.                                                                           |
 
 
 ### Response
 
-**[?\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByIdResponse](../../models/operations/GetCarsByIdResponse.md)**
+**[?\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByIdResponse](../../Models/Operations/GetCarsByIdResponse.md)**
 
 
 ## getCarsByName
@@ -153,11 +153,11 @@ try {
 
 | Parameter                                                                                                                       | Type                                                                                                                            | Required                                                                                                                        | Description                                                                                                                     |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                      | [\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByNameRequest](../../models/operations/GetCarsByNameRequest.md)   | :heavy_check_mark:                                                                                                              | The request object to use for the request.                                                                                      |
-| `security`                                                                                                                      | [\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByNameSecurity](../../models/operations/GetCarsByNameSecurity.md) | :heavy_check_mark:                                                                                                              | The security requirements to use for the request.                                                                               |
+| `$request`                                                                                                                      | [\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByNameRequest](../../Models/Operations/GetCarsByNameRequest.md)   | :heavy_check_mark:                                                                                                              | The request object to use for the request.                                                                                      |
+| `security`                                                                                                                      | [\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByNameSecurity](../../Models/Operations/GetCarsByNameSecurity.md) | :heavy_check_mark:                                                                                                              | The security requirements to use for the request.                                                                               |
 
 
 ### Response
 
-**[?\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByNameResponse](../../models/operations/GetCarsByNameResponse.md)**
+**[?\MultiAuthTester\MultipleAuthTester\Models\Operations\GetCarsByNameResponse](../../Models/Operations/GetCarsByNameResponse.md)**
 
