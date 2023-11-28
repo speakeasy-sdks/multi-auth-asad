@@ -6,7 +6,7 @@
     
 </div>
 
-<!-- Start SDK Installation -->
+<!-- Start SDK Installation [installation] -->
 ## SDK Installation
 
 ### Composer
@@ -32,10 +32,11 @@ Then run the following command:
 ```bash
 composer update
 ```
-<!-- End SDK Installation -->
+<!-- End SDK Installation [installation] -->
 
+<!-- Start SDK Example Usage [usage] -->
 ## SDK Example Usage
-<!-- Start SDK Example Usage -->
+
 ### Example
 
 ```php
@@ -71,24 +72,19 @@ try {
 }
 
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->
 
-<!-- Start SDK Available Operations -->
+<!-- Start Available Resources and Operations [operations] -->
 ## Available Resources and Operations
-
 
 ### [Cars](docs/sdks/cars/README.md)
 
 * [getCarsByCNIC](docs/sdks/cars/README.md#getcarsbycnic) - Find cars by CNIC
 * [getCarsById](docs/sdks/cars/README.md#getcarsbyid) - Find cars by ID
 * [getCarsByName](docs/sdks/cars/README.md#getcarsbyname) - Find cars by Name
-<!-- End SDK Available Operations -->
+<!-- End Available Resources and Operations [operations] -->
 
 
-
-<!-- Start Dev Containers -->
-
-<!-- End Dev Containers -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
 

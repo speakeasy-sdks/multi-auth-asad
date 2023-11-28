@@ -32,7 +32,6 @@ src/Models/Shared/Car.php
 src/Models/Shared/ErrorModel.php
 src/Models/Shared/SchemeHTTPBasic.php
 src/Models/Shared/Security.php
-USAGE.md
 docs/Models/Operations/GetCarsByCNICRequest.md
 docs/Models/Operations/GetCarsByCNICResponse.md
 docs/Models/Operations/GetCarsByIdSecurity.md
@@ -47,4 +46,5 @@ docs/Models/Shared/SchemeHTTPBasic.md
 docs/Models/Shared/Security.md
 docs/sdks/multipleauthtester/README.md
 docs/sdks/cars/README.md
+USAGE.md
 .gitattributes
