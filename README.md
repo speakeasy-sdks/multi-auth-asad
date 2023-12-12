@@ -50,9 +50,9 @@ use MultiAuthTester\MultipleAuthTester\Models\Shared;
 use MultiAuthTester\MultipleAuthTester\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
-$security->httpBasic->password = '';
-$security->httpBasic->username = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
+$security->httpBasic->password = '<YOUR_PASSWORD_HERE>';
+$security->httpBasic->username = '<YOUR_USERNAME_HERE>';
 
 $sdk = MultipleAuthTester\MultipleAuthTester::builder()
     ->setSecurity($security)
@@ -85,6 +85,29 @@ try {
 <!-- End Available Resources and Operations [operations] -->
 
 
+
+<!-- Start Server Selection [server] -->
+## Server Selection
+
+## Server Selection
+
+### Select Server by Index
+
+You can override the default server globally by passing a server index to the `server_idx: int` optional parameter when initializing the SDK client instance. The selected server will then be used as the default on the operations that use it. This table lists the indexes associated with the available servers:
+
+| # | Server | Variables |
+| - | ------ | --------- |
+| 0 | `https://development.gigantic-server.com/v1` | None |
+| 1 | `https://staging.gigantic-server.com/v1` | None |
+| 2 | `https://api.gigantic-server.com/v1` | None |
+
+
+
+
+### Override Server URL Per-Client
+
+The default server can also be overridden globally by passing a URL to the `server_url: str` optional parameter when initializing the SDK client instance. For example:
+<!-- End Server Selection [server] -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
 

@@ -28,17 +28,15 @@ use \MultiAuthTester\MultipleAuthTester\Models\Shared;
 use \MultiAuthTester\MultipleAuthTester\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
-$security->httpBasic->password = '';
-$security->httpBasic->username = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
+$security->httpBasic->password = '<YOUR_PASSWORD_HERE>';
+$security->httpBasic->username = '<YOUR_USERNAME_HERE>';
 
-$sdk = MultipleAuthTester\MultipleAuthTester::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = MultipleAuthTester\MultipleAuthTester::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCarsByCNICRequest();
-    $request->cnic = 'string';
+        $request = new Operations\GetCarsByCNICRequest();
+    $request->cnic = 'string';;
 
     $response = $sdk->cars->getCarsByCNIC($request);
 
@@ -78,15 +76,14 @@ use \MultiAuthTester\MultipleAuthTester;
 use \MultiAuthTester\MultipleAuthTester\Models\Shared;
 use \MultiAuthTester\MultipleAuthTester\Models\Operations;
 
-$sdk = MultipleAuthTester\MultipleAuthTester::builder()
-    ->build();
+$sdk = MultipleAuthTester\MultipleAuthTester::builder()->build();
 
 try {
-    $request = new Operations\GetCarsByIdRequest();
-    $request->id = 174472;
+        $request = new Operations\GetCarsByIdRequest();
+    $request->id = 174472;;
 
     $requestSecurity = new Operations\GetCarsByIdSecurity();
-    $requestSecurity->apiKey = '';
+    $requestSecurity->apiKey = '<YOUR_API_KEY_HERE>';
 
     $response = $sdk->cars->getCarsById($request, $requestSecurity);
 
@@ -127,17 +124,16 @@ use \MultiAuthTester\MultipleAuthTester;
 use \MultiAuthTester\MultipleAuthTester\Models\Shared;
 use \MultiAuthTester\MultipleAuthTester\Models\Operations;
 
-$sdk = MultipleAuthTester\MultipleAuthTester::builder()
-    ->build();
+$sdk = MultipleAuthTester\MultipleAuthTester::builder()->build();
 
 try {
-    $request = new Operations\GetCarsByNameRequest();
-    $request->name = 'string';
+        $request = new Operations\GetCarsByNameRequest();
+    $request->name = 'string';;
 
     $requestSecurity = new Operations\GetCarsByNameSecurity();
-    $requestSecurity->apiKeyHeader = '';
-    $requestSecurity->httpBasic->password = '';
-    $requestSecurity->httpBasic->username = '';
+    $requestSecurity->apiKeyHeader = '<YOUR_API_KEY_HERE>';
+    $requestSecurity->httpBasic->password = '<YOUR_PASSWORD_HERE>';
+    $requestSecurity->httpBasic->username = '<YOUR_USERNAME_HERE>';
 
     $response = $sdk->cars->getCarsByName($request, $requestSecurity);
 
