@@ -1,0 +1,69 @@
+lockVersion: 2.0.0
+id: 0dc87879-e3ea-4795-b2ad-2d1790a8874e
+management:
+  docChecksum: 80f3394dfe48f9663121e6a03f027f48
+  docVersion: 1.0.1
+  speakeasyVersion: internal
+  generationVersion: 2.225.2
+  releaseVersion: 0.8.0
+  configChecksum: 94dcab60194db50d9bdfe800e3613665
+  repoURL: https://github.com/speakeasy-sdks/multi-auth-asad.git
+  repoSubDirectory: .
+  installationURL: https://github.com/speakeasy-sdks/multi-auth-asad
+features:
+  php:
+    core: 3.3.0
+    globalSecurity: 2.81.2
+    globalServerURLs: 2.82.1
+    methodSecurity: 2.82.0
+generatedFiles:
+  - src/SDKConfiguration.php
+  - src/Cars.php
+  - src/MultipleAuthTester.php
+  - src/MultipleAuthTesterBuilder.php
+  - composer.json
+  - phpstan.neon
+  - src/Utils/EnumHandler.php
+  - src/Utils/FormMetadata.php
+  - src/Utils/Headers.php
+  - src/Utils/JSON.php
+  - src/Utils/MixedJSONHandler.php
+  - src/Utils/MultipartMetadata.php
+  - src/Utils/ParamsMetadata.php
+  - src/Utils/PathParameters.php
+  - src/Utils/QueryParameters.php
+  - src/Utils/RequestBodies.php
+  - src/Utils/RequestMetadata.php
+  - src/Utils/Security.php
+  - src/Utils/SecurityClient.php
+  - src/Utils/SecurityMetadata.php
+  - src/Utils/SpeakeasyMetadata.php
+  - src/Utils/Utils.php
+  - src/Models/Operations/GetCarsByCNICRequest.php
+  - src/Models/Operations/GetCarsByCNICResponse.php
+  - src/Models/Operations/GetCarsByIdSecurity.php
+  - src/Models/Operations/GetCarsByIdRequest.php
+  - src/Models/Operations/GetCarsByIdResponse.php
+  - src/Models/Operations/GetCarsByNameSecurity.php
+  - src/Models/Operations/GetCarsByNameRequest.php
+  - src/Models/Operations/GetCarsByNameResponse.php
+  - src/Models/Shared/Car.php
+  - src/Models/Shared/ErrorModel.php
+  - src/Models/Shared/SchemeHTTPBasic.php
+  - src/Models/Shared/Security.php
+  - docs/Models/Operations/GetCarsByCNICRequest.md
+  - docs/Models/Operations/GetCarsByCNICResponse.md
+  - docs/Models/Operations/GetCarsByIdSecurity.md
+  - docs/Models/Operations/GetCarsByIdRequest.md
+  - docs/Models/Operations/GetCarsByIdResponse.md
+  - docs/Models/Operations/GetCarsByNameSecurity.md
+  - docs/Models/Operations/GetCarsByNameRequest.md
+  - docs/Models/Operations/GetCarsByNameResponse.md
+  - docs/Models/Shared/Car.md
+  - docs/Models/Shared/ErrorModel.md
+  - docs/Models/Shared/SchemeHTTPBasic.md
+  - docs/Models/Shared/Security.md
+  - docs/sdks/multipleauthtester/README.md
+  - docs/sdks/cars/README.md
+  - USAGE.md
+  - .gitattributes
