@@ -4,18 +4,18 @@ management:
   docChecksum: 80f3394dfe48f9663121e6a03f027f48
   docVersion: 1.0.1
   speakeasyVersion: internal
-  generationVersion: 2.225.2
-  releaseVersion: 0.8.0
-  configChecksum: 94dcab60194db50d9bdfe800e3613665
+  generationVersion: 2.237.2
+  releaseVersion: 0.8.1
+  configChecksum: fab8c34eaac4938eac947ad6bc560e9f
   repoURL: https://github.com/speakeasy-sdks/multi-auth-asad.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/multi-auth-asad
 features:
   php:
     core: 3.3.0
-    globalSecurity: 2.81.2
+    globalSecurity: 2.81.3
     globalServerURLs: 2.82.1
-    methodSecurity: 2.82.0
+    methodSecurity: 2.82.1
 generatedFiles:
   - src/SDKConfiguration.php
   - src/Cars.php
