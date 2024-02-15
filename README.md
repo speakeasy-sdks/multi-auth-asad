@@ -60,7 +60,7 @@ $sdk = MultipleAuthTester\MultipleAuthTester::builder()
 
 try {
     $request = new Operations\GetCarsByCNICRequest();
-    $request->cnic = 'string';
+    $request->cnic = '<value>';
 
     $response = $sdk->cars->getCarsByCNIC($request);
 

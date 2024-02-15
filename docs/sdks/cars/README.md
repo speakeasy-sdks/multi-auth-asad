@@ -36,7 +36,7 @@ $sdk = MultipleAuthTester\MultipleAuthTester::builder()->setSecurity($security)-
 
 try {
         $request = new Operations\GetCarsByCNICRequest();
-    $request->cnic = 'string';;
+    $request->cnic = '<value>';;
 
     $response = $sdk->cars->getCarsByCNIC($request);
 
@@ -128,7 +128,7 @@ $sdk = MultipleAuthTester\MultipleAuthTester::builder()->build();
 
 try {
         $request = new Operations\GetCarsByNameRequest();
-    $request->name = 'string';;
+    $request->name = '<value>';;
 
     $requestSecurity = new Operations\GetCarsByNameSecurity();
     $requestSecurity->apiKeyHeader = '<YOUR_API_KEY_HERE>';
