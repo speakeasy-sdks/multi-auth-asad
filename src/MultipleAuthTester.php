@@ -31,8 +31,7 @@ class MultipleAuthTester
      * @var Cars $$cars
      */
 	public Cars $cars;
-		
-	private SDKConfiguration $sdkConfiguration;
+	
 
 	/**
 	 * Returns a new instance of the SDK builder used to configure and create the SDK instance.
@@ -47,9 +46,9 @@ class MultipleAuthTester
 	/**
 	 * @param SDKConfiguration $sdkConfiguration
 	 */
-	public function __construct(SDKConfiguration $sdkConfiguration)
-	{
-		$this->sdkConfiguration = $sdkConfiguration;
+	public function __construct(
+		private SDKConfiguration $sdkConfiguration,
+	) {
 		
 		$this->cars = new Cars($this->sdkConfiguration);
 	}
